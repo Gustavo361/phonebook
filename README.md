@@ -1,19 +1,77 @@
-# 
+# Phonebook CRUD Application
+This project is a simple phonebook CRUD (Create, Read, Update, Delete) application built using Laravel for the backend and Vue.js for the frontend.
+
+## Features
+- Add, view, edit, and delete contacts
+- Responsive design
+- Simple and intuitive UI
+
+## Prerequisites
+
+- PHP
+- Composer
+- Node.js
+- NPM or Yarn
+- MySQL
+
+## Installation
+
+### Clone the Repository
+```bash
+git clone https://github.com/Gustavo361/phonebook.git
+cd phonebook
+```
 
 ## Project setup
+### Backend Setup (Laravel)
+```
+composer install
+```
+#### Copy .env.example to .env and configure the database:
+```
+cp .env.example .env
+```
+#### Update the .env file with your database credentials:
+```plaintext
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=phonebook
+DB_USERNAME=your_user
+DB_PASSWORD=your_pass
+```
+#### Generate Application Key:
+```
+php artisan key:generate
+```
+#### Run Migrations:
+```
+php artisan migrate
+```
+#### Start the Laravel development server:
+```
+php artisan serve
+```
+
+### Frontend Setup (Vue.js)
+#### Install Dependencies:
 ```
 npm install
 ```
+#### Build the Frontend:
+```
+npm run dev
+```
+## Running the Application
+After completing the installation steps, you can access the application at http://localhost:8000.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Usage
+Add a new contact.
+View the list of contacts.
+Edit or delete existing contacts.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# Additional Notes
+Make sure MySQL is running and the user and database specified in the .env file exist.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# License
+This project is licensed under the MIT License - see the LICENSE file for details.
