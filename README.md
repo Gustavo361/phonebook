@@ -55,7 +55,9 @@ php artisan serve
 
 ### Frontend Setup (Vue.js)
 #### Install Dependencies:
+##### open a new prompt window
 ```
+cd phonebook
 npm install
 ```
 #### Build the Frontend:
