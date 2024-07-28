@@ -70,6 +70,10 @@ Add a new contact.
 View the list of contacts.
 Edit or delete existing contacts.
 
+## Explanation in video
+[first part](https://www.loom.com/share/0856a0f54c8a4580acbfe73d0b49b013)
+[second part](https://www.loom.com/share/23f619b6db8f44bd8de5336031962694)
+
 # Additional Notes
 Make sure MySQL is running and the user and database specified in the .env file exist.
 
