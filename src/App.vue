@@ -29,11 +29,11 @@ export default {
 }
 
 body {
-  background-color: #141C2F;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  background-color: #141c2f;
   height: 100vh;
+  width: 100vw;
 }
 
 body>* {
@@ -43,10 +43,11 @@ body>* {
   color: white;
 }
 
-@media (max-width: 600px) { 
-  body > * {
+@media (max-width: 600px) {
+  body>* {
     padding: 0 2.5%;
-  }}
+  }
+}
 
 #app {
   font-family: Rubik, sans-serif;
@@ -60,7 +61,7 @@ main {
 
 nav a {
   font-weight: 700;
-  color:white
+  color: white
 }
 
 nav a.router-link-exact-active {
@@ -75,7 +76,7 @@ form {
   display: flex;
   flex-direction: column;
   background-color: #171723;
-  padding: 1.5% 2%; 
+  padding: 1.5% 2%;
   border-radius: 12px
 }
 
@@ -115,7 +116,7 @@ button {
 
 button:hover {
   cursor: pointer;
-  color:#42B983;
+  color: #42B983;
   text-decoration: underline
 }
 </style>

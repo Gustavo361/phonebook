@@ -34,10 +34,8 @@ export default {
   },
   async created() {
     const contactId = this.$route.params.id;
-    console.log('Fetching contact with ID:', contactId)
     try {
       const response = await axios.get(`/api/contacts/${contactId}`);
-      console.log('Contact data:', response.data);
       this.contact = response.data;
     } catch (error) {
       console.error('Error fetching contact details:', error);

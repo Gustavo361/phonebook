@@ -8,13 +8,13 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap">
     <title>Phonebook</title>
-    <link rel="stylesheet" href="{{ asset('vue/css/app.15944501.css')}}">
+    <link rel="stylesheet" href="{{ asset('vue/css/app.ec21e6e0.css')}}">
 </head>
 
 <body>
     <div id="app"></div>
     <script src="{{ asset('vue/js/chunk-vendors.c4cd0c0e.js') }}"></script>
-    <script src="{{ asset('vue/js/app.cd93078a.js') }}"></script>
+    <script src="{{ asset('vue/js/app.b9daae8d.js') }}"></script>
 </body>
 
 </html>
