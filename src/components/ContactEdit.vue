@@ -12,7 +12,7 @@
       </div>
       <div>
         <label for="email">Email:</label>
-        <input type="email" id="email" v-model="contact.email" required />
+        <input type="email" id="email" v-model="contact.email" @input="filterNumeric" required/>
       </div>
       <div>
         <label for="image">Image:</label>
@@ -69,7 +69,11 @@ export default {
       } catch (error) {
         console.error('Error updating contact:', error);
       }
-    }
+    },
+    filterNumeric(event) {
+      event.target.value = event.target.value.replace(/\D/g, '');
+      this.contact.phone = event.target.value;
+    },
   }
 };
 </script>

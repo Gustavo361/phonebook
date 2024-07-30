@@ -14,7 +14,7 @@
 <body>
     <div id="app"></div>
     <script src="{{ asset('vue/js/chunk-vendors.c4cd0c0e.js') }}"></script>
-    <script src="{{ asset('vue/js/app.b9daae8d.js') }}"></script>
+    <script src="{{ asset('vue/js/app.a6216303.js') }}"></script>
 </body>
 
 </html>
