@@ -8,8 +8,8 @@
       </div>
       <div>
         <label for="phone">Phone:</label>
-        <input maxlength="15" type="text" inputmode="numeric" pattern="[0-9]+"
-          oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+        <input maxlength="15" type="text" inputmode="numeric" pattern="[0-9]+" v-model="contact.phone"
+          @input="contact.phone = contact.phone.replace(/[^0-9]/g, '')" />
       </div>
       <div>
         <label for="email">Email:</label>
